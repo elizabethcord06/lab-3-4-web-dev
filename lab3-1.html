@@ -4,6 +4,26 @@ var arr = [];
 for (var i=0, t=40; i<16; i++) {
     arr.push(Math.round(Math.random() * t)-10)
 }
-alert(arr);
+alert("Array: " + arr);
+
+
+for (var i=0, t=40; i<16; i++) {
+	if(arr[i]<0){
+			function calculateAverage(array) {
+			    var total = 0;
+			    var count = 0;
+
+			    array.forEach(function(item, index) {
+			        total += item;
+			        count++;
+			    });
+
+			    return total / count;
+			}
+		}
+}	
+
+alert("Array average: " + calculateAverage(arr));
+
 </script>
 </html>
