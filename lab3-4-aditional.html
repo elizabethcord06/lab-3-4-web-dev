@@ -1,0 +1,28 @@
+</script>
+<head>
+</head>
+<script>
+	
+var red=0
+var black = 1
+var white = 2
+
+for (var i = 0; i < 1000001; i++) {
+	var a = Math.round(Math.random() * 3)
+	if (a == 0){
+		red = red + 1
+	}
+		if (a == 2){
+		white = white + 1
+	}
+		if (a == 1){
+		black = black + 1
+	}
+}
+
+alert("Amount of red out: " + red)
+alert("Amount of white out: " + white)
+alert("Amount of black out: " + black)
+
+</script>
+</html>
