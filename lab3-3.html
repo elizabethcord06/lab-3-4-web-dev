@@ -1,0 +1,38 @@
+<html>
+<script>
+var arr = [];
+for (var i=0, t=40; i<16; i++) {
+    arr.push(Math.round(Math.random() * t)-10)
+}
+alert("Array: " + arr);
+
+
+
+var positive=0
+var negative=0
+var zero=0
+var positivesum=0
+var negativesum=0
+
+for (var i=0, t=40; i<16; i++) {
+		if (arr[i]>0){
+			positive=positive+1
+			positivesum=positivesum+arr[i]
+			var avgpositeve=positivesum/positive
+		}
+		if (arr[i]<0){
+			negative=negative+1
+			negativesum=negativesum+arr[i]
+			var avgnegative=negativesum/negative
+		}
+		if (arr[i]==0){
+			zero=zero+1
+		}
+}
+
+
+alert("Average positive array: "+ avgpositeve)
+alert("Average negative array: "+ avgnegative)
+alert("Zero: "+ zero)
+</script>
+</html>2
