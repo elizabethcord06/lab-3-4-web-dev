@@ -1,0 +1,43 @@
+<html>
+<script>
+
+let user = {
+  name: "Джон",
+  lastname: "Martinez",
+  age: 30,
+  phone: "+79032228888"
+};
+
+let order = {
+  date: "18/12/2021",
+  food: "Pizza",
+  quantity: 2,
+  total: 870
+};
+
+let restaurant = {
+  name: "PizzaPizza",
+  address: "name st., 13 moscow",
+  phone: "79332228844",
+};
+
+
+user.userInfo = function() {
+  alert("Order for " + this.name + " " +this.lastname + ", telephone number: " + this.phone);
+};
+
+order.orderInfo = function() {
+  alert("Order from the " + this.date + " for " + this.quantity + " " + this.food + " with a total of " + this.total);
+};
+
+restaurant.restaurantInfo = function() {
+  alert("restaurant " + this.name + " address: " +this.address + " and telephone number: " + this.phone);
+};
+
+
+user.userInfo();
+order.orderInfo();
+restaurant.restaurantInfo();
+
+</script>
+</html>
