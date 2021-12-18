@@ -1,0 +1,32 @@
+<html>
+<script>
+let calculator = {
+  sum() {
+    return this.a + this.b;
+  },
+
+  sub() {
+    return this.a - this.b;
+  },
+  mul() {
+    return this.a * this.b;
+  },
+
+  div() {
+    return this.a / this.b;
+  },
+
+  read() {
+    this.a = +prompt('Enter first number: ', 0);
+    this.b = +prompt('Enter second number: ', 0);
+  }
+};
+
+calculator.read();
+alert("Summ of your numbers: " + calculator.sum() );
+alert("Subt of your numbers: " + calculator.sub() );
+alert("Mult of your numbers: " + calculator.mul() );
+alert("Divi of your numbers: " + calculator.div() );
+
+</script>
+</html>
